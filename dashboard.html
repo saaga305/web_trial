@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .dashboard-container {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .user-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        #logout-btn {
+            background: #ff4a4a;
+            margin-top: 20px;
+        }
+        #logout-btn:hover {
+            background: #e03e3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <div class="user-info">
+            <p id="user-email">Loading user information...</p>
+        </div>
+        <button class="btn" id="logout-btn">Logout</button>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    
+    <!-- Firebase Config -->
+    <script src="js/firebase-config.js"></script>
+    
+    <!-- Dashboard Logic -->
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
